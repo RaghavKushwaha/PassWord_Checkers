@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+
+    <!-- Background Animation -->
+    <div class="bg-animation"></div>
+
+    <div class="container">
+
+        <!-- Left Side -->
+        <div class="left-side">
+
+            <h1>Pass Check</h1>
+
+            <p>
+                Secure your digital identity with
+                advanced password protection and
+                authentication systems.
+            </p>
+
+            <div class="features">
+
+                <div class="feature">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Advanced Security</span>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Strong Authentication</span>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-user-secret"></i>
+                    <span>Privacy Protection</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="right-side">
+
+            <form class="login-form">
+
+                <h2>Welcome </h2>
+
+                <!-- Password -->
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input type="password" id="password" placeholder="Enter Password">
+
+                    <button type="button" class="show-btn" onclick="togglePassword()">
+                        👁
+                    </button>
+
+                </div>
+
+                <!-- Strength Bar -->
+                <div class="strength-container">
+                    <div id="strength-bar"></div>
+                </div>
+
+                <!-- Result -->
+                <div id="result"></div>
+
+                <!-- Buttons -->
+                <button type="button" class="main-btn" onclick="checkPassword()">
+                    Check Strength
+                </button>
+
+                <button type="button" class="main-btn generate-btn" onclick="generatePassword()">
+                    Generate Strong Password
+                </button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
